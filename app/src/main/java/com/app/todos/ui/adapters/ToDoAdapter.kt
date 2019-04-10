@@ -26,8 +26,7 @@ class ToDoAdapter : RecyclerView.Adapter<ToDoAdapter.VH>() {
         return VH(LayoutInflater.from(p0.context).inflate(R.layout.item_todo_layout, p0, false))
     }
 
-    override fun getItemCount(): Int =
-            data.size
+    override fun getItemCount(): Int = data.size
 
 
     override fun onBindViewHolder(p0: VH, p1: Int) {
@@ -41,7 +40,6 @@ class ToDoAdapter : RecyclerView.Adapter<ToDoAdapter.VH>() {
             view.text = data.text
         }
     }
-
 
 }
 
